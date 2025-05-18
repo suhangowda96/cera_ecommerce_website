@@ -1,0 +1,153 @@
+<!-- product.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details - Cera</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="icon" href="../Images/logo.png">
+</head>
+<body>
+  <section id="header">
+    <a href=""><img src="../Images/WhatsApp_Image_2025-04-08_at_9.09.25_AM-removebg-preview.png" height="80px" width="150px" alt="logo"></a>
+    <div>
+        <ul id="navbar" type="None">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="cart.html" class="cart-link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="home-cart-count" class="cart-badge">0</span>
+              </a>
+            </li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+  </section>
+
+  <section class="product-details section-p1">
+    <div class="product-images">
+      <div class="main-image">
+        <img id="mainImage" src="../Images/rcb.webp" alt="Main Product Image">
+      </div>
+      <div class="thumbnail-images">
+        <div class="thumbnail active" onclick="changeImage(0)">
+          <img src="../Images/product1/1size.webp" alt="Thumbnail 1">
+        </div>
+        <div class="thumbnail" onclick="changeImage(1)">
+          <img src="../Images/product1/shopping.webp" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="changeImage(2)">
+          <img src="../Images/product1/shopping (2).webp" alt="Thumbnail 3">
+        </div>
+        <div class="thumbnail" onclick="changeImage(3)">
+          <img src="../Images/product1/shopping (1).webp" alt="Thumbnail 4">
+        </div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1 class="product-title">Men's Premium Cotton T-Shirt</h1>
+      <div class="product-price">₹999 <span class="original-price" style="text-decoration: line-through;">₹1499/-</span></div>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>(128 Reviews)</span>
+      </div>
+
+      <div class="size-selector">
+        <label for="size">Select Size:</label>
+        <select id="size">
+          <option value="S">Small (S)</option>
+          <option value="M">Medium (M)</option>
+          <option value="L">Large (L)</option>
+          <option value="XL">Extra Large (XL)</option>
+        </select>
+      </div>
+
+      <div class="quantity-selector">
+        <label>Quantity:</label>
+        <div class="quantity-input">
+          <button onclick="decrementQuantity()">-</button>
+          <input type="number" id="quantity" value="1" min="1">
+          <button onclick="incrementQuantity()">+</button>
+        </div>
+      </div>
+
+      <button class="add-to-cart-btn" onclick="addToCart()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+      </button>
+
+      <div class="product-description">
+        <h3>Product Details</h3>
+        <p>Premium quality cotton t-shirt with superior comfort and durability. Perfect for casual wear with a modern fit.</p>
+        <ul>
+          <li>100% Premium Cotton</li>
+          <li>Machine Wash Cold</li>
+          <li>Slim Fit Design</li>
+          <li>Available in Multiple Colors</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Same footer as index.html -->
+  <footer class="section-p1">
+    <div class="col">      
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> MG Road, Church Street, Bengaluru – 560010</p>
+      <p><strong>Phone:</strong> (+91) 75436 57857</p>
+      <p><strong>Hours :</strong> 09:00 AM to 10:00 PM Mon - Sat</p>
+      <div>
+        <h4>Follow Us</h4>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About Us</h4>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <a href="https://www.apple.com/in/app-store/"><img src="../Images/app.png" alt="App Store" height="40" width="110" /></a>
+        <a href="https://play.google.com/store/games?hl=en_IN&pli=1"><img src="../Images/play.png" alt="Google Play" height="40" width="110" /></a>
+      </div>
+      <p>Secure Payment Gateway</p>
+      <a href="https://paytm.com/"><img src="../Images/payment.jpg" alt="Payment" height="40" width="110" /></a>
+    </div>
+    <div class="copy-right">
+      <p>&copy; 2025 Cera – All rights reserved</p>
+    </div>
+  </footer>      
+  <script src="../javasctipt/product.js"></script>
+</body>
+</html>

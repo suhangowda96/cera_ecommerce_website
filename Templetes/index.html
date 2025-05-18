@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cera</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="icon" href="../Images/WhatsApp_Image_2025-04-08_at_9.09.25_AM-removebg-preview.png">
+</head>
+<body>
+    <section id="header">
+        <a href=""><img src="../Images/WhatsApp_Image_2025-04-08_at_9.09.25_AM-removebg-preview.png" height="80px" width="150px" alt="logo"></a>
+        <div>
+            <ul id="navbar" type="None">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="home-cart-count" class="cart-badge">0</span>
+                  </a>
+                </li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </section>
+
+    <!-- <section class="promo-banner">
+        <h1>🔥 Trade is Live!</h1>
+        <h2>Unbeatable Super Value Deals</h2>
+        <h1>On All Products 🎁</h1>
+        <p>Save big with exclusive coupons & get up to <strong>60% OFF</strong> now!</p>
+        <div>
+            <a href="shop.html"><button>🛍️ Shop Now</button></a>
+        </div>    
+    </section> -->
+
+    <div class="carousel">
+
+        <div class="list">
+
+            <!-- Slide 1 -->
+        <div class="item" style="background-image: url(../Images/unnamed.jpg);">
+            <div class="content">
+            <div class="title">Elevate Your Edge</div>
+            <div class="name">The Urban Blazer</div>
+            <div class="des">Sharp tailoring meets street-ready style in this versatile blazer—perfect from boardroom to bar.</div>
+            <div class="btn">
+                <button>Shop Blazers</button>
+                <button>Join VIP List</button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="item" style="background-image: url(../Images/shop/Shop.png);">
+            <div class="content">
+            <div class="title">Breathe Easy</div>
+            <div class="name">Airflow Tee</div>
+            <div class="des">Lightweight, moisture-wicking fabric keeps you cool and confident all day long.</div>
+            <div class="btn">
+                <button>Discover Tees</button>
+                <button>Subscribe</button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="item" style="background-image: url(../Images/shoping.jpg);">
+            <div class="content">
+            <div class="title">Move With Confidence</div>
+            <div class="name">Flex Utility Pants</div>
+            <div class="des">Engineered for comfort and durability, these pants adapt to your every move.</div>
+            <div class="btn">
+                <button>Explore Pants</button>
+                <button>Get Updates</button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="item" style="background-image: url(../Images/blog/fasion.webp);">
+            <div class="content">
+            <div class="title">Step Into Style</div>
+            <div class="name">Luxe Sneaker</div>
+            <div class="des">Premium leather and cushioned soles combine for unbeatable comfort and sleek design.</div>
+            <div class="btn">
+                <button>View Sneakers</button>
+                <button>Join Club</button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Slide 5 -->
+        <div class="item" style="background-image: url(../Images/summer.jpg);">
+            <div class="content">
+            <div class="title">Denim, Redefined</div>
+            <div class="name">Modern Slim Jeans</div>
+            <div class="des">A contemporary fit with just the right amount of stretch for everyday versatility.</div>
+            <div class="btn">
+                <button>Browse Denim</button>
+                <button>Subscribe</button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Slide 6 -->
+        <div class="item" style="background-image: url(../Images/blog/head.jpg);">
+            <div class="content">
+            <div class="title">Cozy Meets Chic</div>
+            <div class="name">Knit Cocoon Cardigan</div>
+            <div class="des">Soft yarn and a relaxed fit deliver warmth and style for cooler evenings.</div>
+            <div class="btn">
+                <button>See Cardigans</button>
+                <button>Stay Updated</button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Slide 7 -->
+        <div class="item" style="background-image: url(../Images/blog/making.jpg);">
+            <div class="content">
+            <div class="title">Power in Prints</div>
+            <div class="name">Graphic Statement Tee</div>
+            <div class="des">Bold patterns and premium cotton make this tee the focal point of any outfit.</div>
+            <div class="btn">
+                <button>Shop Graphics</button>
+                <button>Join Newsletter</button>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Slide 8 -->
+        <div class="item" style="background-image: url(../Images/blog/sustain.jpg);">
+            <div class="content">
+            <div class="title">All-Day Comfort</div>
+            <div class="name">Cloud-Soft Joggers</div>
+            <div class="des">Ultra-soft fabric and tailored cuts provide the perfect balance of style and ease.</div>
+            <div class="btn">
+                <button>Explore Joggers</button>
+                <button>Subscribe</button>
+            </div>
+            </div>
+        </div>  
+
+        </div>
+
+        <!--next prev button-->
+        <div class="arrows">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+
+
+        <!-- time running -->
+        <div class="timeRunning"></div>
+
+    </div>
+
+<!-- ................................................................................................................................ -->
+    <section id="features">
+        <div class="fe-box">
+            <img src="../Images/free ship.jpg" alt="Free Shipping">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../Images/save money.jpg" alt="Save Money">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../Images/happy sales.jpg" alt="Happy Sale">
+            <h6>Happy Sale</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../Images/service.jpg" alt="24/7 Support">
+            <h6>24/7 Support</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../Images/oline.jpg" alt="Online Order">
+            <h6>Online Order</h6>
+        </div>
+    </section>
+
+    <section class="products1 section-p1">
+      <h2>Trending Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-container">
+          <div class="pro">
+            <a href="product1.html">
+              <img src="../Images/rcb.webp" alt="Product Image">
+            </a>
+              <div class="des">
+                  <span>Puma</span>
+                  <h5>RCB</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <div class="actions">
+                      <span class="price">₹999/-</span>
+                      <span class="cart-icon">
+                          <i class="fa-solid fa-shopping-cart cart"></i>
+                      </span>
+                  </div>
+                  <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+              </div>
+           
+          </div>
+          <div class="pro">
+            <a href="product.html">
+              <img src="../Images/f1.jpg" alt="Product Image"></a>
+              <div class="des">
+                  <span>adidas</span>
+                  <h5>Cartoon Astronut Shirt</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <div class="actions">
+                      <span class="price">₹999/-</span>
+                      <span class="cart-icon">
+                          <i class="fa-solid fa-shopping-cart cart"></i>
+                      </span>
+                  </div>
+                  <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="../Images/f1.jpg" alt="Product Image">
+              <div class="des">
+                  <span>adidas</span>
+                  <h5>Cartoon Astronut Shirt</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <div class="actions">
+                      <span class="price">₹999/-</span>
+                      <span class="cart-icon">
+                          <i class="fa-solid fa-shopping-cart cart"></i>
+                      </span>
+                  </div>
+                  <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="../Images/f1.jpg" alt="Product Image">
+              <div class="des">
+                  <span>adidas</span>
+                  <h5>Cartoon Astronut Shirt</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <div class="actions">
+                      <span class="price">₹999/-</span>
+                      <span class="cart-icon">
+                          <i class="fa-solid fa-shopping-cart cart"></i>
+                      </span>
+                  </div>
+                  <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="../Images/f1.jpg" alt="Product Image">
+              <div class="des">
+                  <span>adidas</span>
+                  <h5>Cartoon Astronut Shirt</h5>
+                  <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <div class="actions">
+                      <span class="price">₹999/-</span>
+                      <span class="cart-icon">
+                          <i class="fa-solid fa-shopping-cart cart"></i>
+                      </span>
+                  </div>
+                  <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair services</h4>
+        <h2>Up to <span>60%</span> All Shirts and Accessories</h2>
+        <button>Explore More</button>
+    </section>
+
+    <section class="products1 section-p1">
+        <h2>Latest Trends</h2>
+      <p>Discover the season's freshest styles and exclusive collections.</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../Images/rcb.webp" alt="Product Image">
+                <div class="des">
+                    <span>Puma</span>
+                    <h5>RCB</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="actions">
+                        <span class="price">₹999/-</span>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-shopping-cart cart"></i>
+                        </span>
+                    </div>
+                    <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+                </div>
+            </div>
+
+            <!-- Additional product items follow the same pattern -->
+            <div class="pro">
+                <img src="../Images/f1.jpg" alt="Product Image">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="actions">
+                        <span class="price">₹999/-</span>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-shopping-cart cart"></i>
+                        </span>
+                    </div>
+                    <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="../Images/f1.jpg" alt="Product Image">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="actions">
+                        <span class="price">₹999/-</span>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-shopping-cart cart"></i>
+                        </span>
+                    </div>
+                    <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="../Images/f1.jpg" alt="Product Image">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="actions">
+                        <span class="price">₹999/-</span>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-shopping-cart cart"></i>
+                        </span>
+                    </div>
+                    <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="../Images/f1.jpg" alt="Product Image">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="actions">
+                        <span class="price">₹999/-</span>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-shopping-cart cart"></i>
+                        </span>
+                    </div>
+                    <span class="original-price" style="text-decoration: line-through;">₹1499/-</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------->
+
+    <section id="sm-banner">
+        <div class="banner-box" >
+          <h4>Exclusive Offers</h4>
+          <h2>Buy 1 Get 1 Free</h2>
+          <span>The hottest deals on Cera’s top products</span>
+          <button class="btn">Shop Now</button>
+        </div>
+        <div class="banner-box" >
+          <h4>Seasonal Collection</h4>
+          <h2>Spring/Summer 2025</h2>
+          <span>Discover the latest trends at Cera</span>
+          <button class="btn">Shop Now</button>
+        </div>
+    </section>
+      
+    <section id="banner3" class="section-p1">
+        <div class="banner-box">
+          <h2>Summer Sale</h2>
+          <h3>Up to 50% Off</h3>
+        </div>
+        <div class="banner-box">
+          <h2>New Arrivals</h2>
+          <h3>Explore 2025 Collection</h3>
+        </div>
+        <div class="banner-box">
+          <h2>Best Sellers</h2>
+          <h3>Top-rated Products</h3>
+        </div>
+    </section>
+      
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+          <h4>Stay Updated</h4>
+          <p>Subscribe for the latest updates and <span>exclusive offers</span></p>
+        </div>
+        <div class="form">
+          <input type="email" placeholder="Your email address" />
+          <button>Sign Up</button>
+        </div>
+    </section>
+      
+    <footer class="section-p1">
+        <div class="col">      
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> MG Road, Church Street, Bengaluru – 560010</p>
+          <p><strong>Phone:</strong> (+91) 75436 57857</p>
+          <p><strong>Hours :</strong> 09:00 AM to 10:00 PM Mon - Sat</p>
+          <div>
+            <h4>Follow Us</h4>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About Us</h4>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <a href="https://www.apple.com/in/app-store/"><img src="../Images/app.png" alt="App Store" height="40" width="110" /></a>
+            <a href="https://play.google.com/store/games?hl=en_IN&pli=1"><img src="../Images/play.png" alt="Google Play" height="40" width="110" /></a>
+          </div>
+          <p>Secure Payment Gateway</p>
+          <a href="https://paytm.com/"><img src="../Images/payment.jpg" alt="Payment" height="40" width="110" /></a>
+        </div>
+        <div class="copy-right">
+          <p>&copy; 2025 Cera – All rights reserved</p>
+        </div>
+    </footer>      
+    <script src="../javasctipt/index.js"></script>
+</body>
+</html>
